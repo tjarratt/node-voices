@@ -6,7 +6,7 @@ gh.configure({
 
 //render index
 gh.get("/", function() {
-  this.render("index");
+  this.render("/index");
 });
 
 //respond to /say
@@ -33,4 +33,4 @@ gh.post("/say", function(args) {
   });
 });
 
-gh.serve(80);
+gh.serve(8080);
