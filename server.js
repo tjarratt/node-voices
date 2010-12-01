@@ -19,6 +19,7 @@ gh.post("/say", function(args) {
   textToSpeak = textToSpeak.replace(/[~`!@#$%^&*()_+-=":';?\/\\>.<,]/g, "");
   if (/^[A-Za-z0-9\s]*$/.test(textToSpeak) != true) {
     textToSpeak = "congratulations you just won a golden wonka ticket";
+  }
   
   //give this an ID
   require("lib/uuid");
@@ -31,3 +32,5 @@ gh.post("/say", function(args) {
     self.renderText(filename);
   });
 });
+
+gh.serve(80);
