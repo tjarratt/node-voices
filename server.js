@@ -58,8 +58,8 @@ app.post("/say", function(request, response) {
 
     textToSpeak = textToSpeak.replace(/[~`!@#$%^&*()_+-=":';?\/\\>.<,]/g, "");
     if (/^[A-Za-z0-9\s]*$/.test(textToSpeak) != true) {
-      textToSpeak = "congratulations you just won a golden wonka ticket";
-      //TODO: email admin
+      textToSpeak = "CONGRATULATIONS YOU JUST FOUND A GOLDEN WONKA TICKET";
+      //TODO: email admin, need to update this regex
     }
 
     //give this an ID so we can embed it on the client
