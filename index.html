@@ -6,10 +6,14 @@
 	</head>
 	<body>
 		<h1>Guided by OS X Voices</h1>
+		<div id="chat">
+		</div>
+		<span>root@~ $ say</span>
 		<input type="text" id="say" name="say"/>
+		<span> -v </span>
 		<select id="voice" name="voice">
 			<option name="Albert">Albert</option>
-			<option name="Cellos">Cellos</option>
+			<option selected="true" name="Cellos">Cellos</option>
 			<option name="Bad News">Bad News</option>
 			<option name="Bahh">Bahh</option>	
 			<option name="Bells">Bells</option>
@@ -23,7 +27,6 @@
 			<option name="Whisper">Whisper</option>
 			<option name="Zarvox">Zarvox</option>
 		</select>
-		<input type="button" name="submit" value="Let's Do This!" id="submit"/>
 		<div id="empty"></div>
 	</body>
 </html>
