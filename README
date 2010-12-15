@@ -1,1 +1,19 @@
-TBD
+OS X ships with a fantastic command line utility called `say`. 
+
+This utility can be used in many ways, for good or evil. For Example:
+
+ssh into your servers and `say oooooh i'm a ghost`
+Scare your friends
+Combine with a webcam to create a low-tech burglar alarm
+Add it to your build integration process
+Add it to your continuous integration server
+Try it with toast
+You can even cut a tin can with it (but you wouldn't want to)
+
+Unfortunately, this utility is not available on many systems (basically every system that isn't a mac). However, thanks to the powers of THE INTERNETS and nodejs Conf, it is! Simply point your browser to {URL}, type in a phrase, optionally select a voice and hit enter. The node.js server will run the command, output a file, and then return a file descriptor to the browser (which will then embed an <audio> element, yadda yadda yadda). Eventually the words you typed will output through your speakers.
+
+usage:
+
+node server.js 
+
+Will listen on port 3000, and provide a fairly simple interface to the `say` command.
